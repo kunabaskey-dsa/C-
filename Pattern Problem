@@ -163,3 +163,21 @@ int main() {
     }
     return 0;
 }
+8. count the number of digits for given number n.
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    int digits=0;
+    while(n>0){
+        digits++;
+        n=n/10;
+    }
+    cout<<"Number of characters are:"<<digits<<endl;
+    return 0;
+}
+o/p
+236897765
+Number of characters are:9
