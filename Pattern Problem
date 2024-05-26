@@ -242,3 +242,20 @@ int main() {
 5=1-2+3-4+5=3
 3
 
+12. print the first n factorial numbers
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    
+    int factorial=1;
+    for(int i=1;i<=n;i++){
+        factorial*=i;
+        
+        cout<<factorial<<endl;
+    }
+    return 0;
+}
+
