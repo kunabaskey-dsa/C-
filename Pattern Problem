@@ -197,3 +197,25 @@ int main() {
     }
     cout<<sum<<endl;
 }
+
+10. Reverse the digits of a number.
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    
+    int reverse=0;
+    while(n>0){
+        int lastdigit = n%10;
+        reverse=reverse*10+lastdigit;
+       n= n/10;
+    }
+    cout<<"Your reverse number is: "<< reverse <<endl;
+    return 0;
+}
+
+234
+Your reverse number is: 432
+
